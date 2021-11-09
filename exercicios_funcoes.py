@@ -25,19 +25,19 @@ def soma_percentual(num, percent):
 print(soma_percentual(10, 10))  # Mostra 11, pois 10% de 10 é 1, e 10 + 1 = 11
 
 """
-4 - Fizz Buzz - Se o parâmetro da função for divisível por 2, retorne fizz, se
+4 - Fizz Buzz - Se o parâmetro da função for divisível por 3, retorne fizz, se
 o parâmetro da função for divisível por 5, retorne buzz. Se o parâmetro da função
 for divisível por 5 e 3, retorne FizzBuzz, caso contrário, retorne o número enviado.
 """
 def fizzbuzz(x):
-    if not x % 2 and not x % 5:
+    if not x % 3 and not x % 5:
         return 'FizzBuzz'
-    elif not x % 2:
+    elif not x % 3:
         return 'fizz'
     elif not x % 5:
         return 'buzz'
     else:
         return x
     
-print(fizzbuzz(10))  # Divisível por 2 e 5, portanto mostra FizzBuzz
-print(fizzbuzz(3))  # Não é divisível 2 nem por 5, portanto mostra o próprio número
+print(fizzbuzz(15))  # Divisível por 3 e 5, portanto mostra FizzBuzz
+print(fizzbuzz(2))  # Não é divisível 3 nem por 5, portanto mostra o próprio número
