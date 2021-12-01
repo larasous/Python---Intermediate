@@ -64,10 +64,8 @@ if __name__ == '__main__':
             listar(list_tarefas)
         elif op == '3':
             undo(list_tarefas, redo_list)
-            continue
         elif op == '4':
             redo(list_tarefas, redo_list)
-            continue
         elif op == '5':
             print('Bye bye :)\n')
             break
